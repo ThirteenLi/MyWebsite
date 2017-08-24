@@ -69,9 +69,12 @@
     line-height: 120px;
     /*background: #cccccc;*/
     border-right:3px solid #9ca8a5;
+    overflow: hidden;
 }
 #introduce .selected{
-    display:block;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
 }
 #introduce p{
     display:none;
