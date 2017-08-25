@@ -3,22 +3,11 @@ requirejs.config({
         jquery:"jquery-1.11.2"
     }
 });
-require(["jquery"],function($){
-    var $introduce=$("#introduce");
-    var $p=$("p",$introduce);
-    var nowindex=0;
-
-    setInterval(function(){
-        nowindex=(nowindex+1)%$p.length;
-        $introduce.animate({
-            width:0
-        },800,"swing",function(){
-            $p.eq(nowindex).addClass("selected").siblings().removeClass("selected");
-        });
-        $introduce.animate({
-            width:$p.eq(nowindex).css("width")
-        },800);
-},2800);
-
-
+require(["jquery","play"],function($,play){
+    setTimeout(function(){
+        play();
+        setInterval(function(){
+            play();
+        },2000);
+},1000);
 });
