@@ -80,10 +80,11 @@
     display:none;
     color:#ffffff;
     font-size: 80px;
+    text-shadow: 5px 5px 5px #6cf;
 }
 #particles-js{
     position: absolute;
-    top:0;
+    top:80px;
     left:0;
     bottom:0;
     right:0;

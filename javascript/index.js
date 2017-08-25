@@ -8,6 +8,6 @@ require(["jquery","play"],function($,play){
         play();
         setInterval(function(){
             play();
-        },2000);
-},1000);
+        },2800);
+},1400);
 });

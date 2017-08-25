@@ -11,12 +11,12 @@ define(["jquery"],function($){
         nowindex=(nowindex+1)%$p.length;
         $introduce.animate({
             width:0
-        },500,"swing",function(){
+        },700,"swing",function(){
             $p.eq(nowindex).addClass("selected").siblings().removeClass("selected");
         });
         $introduce.animate({
             width:$p.eq(nowindex).css("width")
-        },500);
+        },700);
     }
     return play;
 });
